@@ -1,2 +1,0 @@
-# Graduation_Project_2018
-Graduation_Project_2018 of Vocabulary_App_Project

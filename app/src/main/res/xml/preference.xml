@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="复习提醒功能">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notify"
+            android:summaryOff=" 关闭 "
+            android:summaryOn=" 开启 "
+            android:title="定时提醒" />
+        <wordroid.widget.timePreference
+            android:dependency="notify"
+            android:key="time"
+            android:persistent="true"
+            android:summary=""
+            android:title="设定每天提醒时间"></wordroid.widget.timePreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="语音功能">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="iftts"
+            android:persistent="true"
+            android:summaryOff=" 关闭 "
+            android:summaryOn=" 开启 "
+            android:title="自动朗读单词"></CheckBoxPreference>
+
+        <ListPreference
+            android:defaultValue="1"
+            android:key="category"
+            android:summary=""
+            android:title="选择语音种类"></ListPreference>
+    </PreferenceCategory>
+</PreferenceScreen>
