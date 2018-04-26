@@ -47,7 +47,6 @@
             android:windowSoftInputMode="adjustResize"></activity>
         <activity android:name=".activity.LoginActivity"></activity>
         <activity android:name=".activity.MainActivity"></activity>
-        <activity android:name=".activity.ShowActivity"></activity>
         <activity android:name=".launcher.LauncherActivity"></activity>
         <activity android:name=".activity.ProtocolActivity"></activity>
         <activity android:name=".activity.ReviewMainActivity"></activity>
@@ -58,6 +57,8 @@
         <activity android:name=".activity.EditWordActivity"></activity>
         <activity android:name=".activity.PreferenceeActivity"></activity>
         <activity android:name=".activity.MainTrActivity"></activity>
+        <activity android:name=".activity.PhoneRegisterActivity"></activity>
+        <activity android:name=".activity.RegisterActivity"></activity>
         <activity
             android:name=".activity.ReviewActivity"
             android:configChanges="orientation|keyboardHidden"

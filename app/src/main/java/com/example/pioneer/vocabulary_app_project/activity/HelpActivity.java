@@ -14,7 +14,7 @@ public class HelpActivity extends Activity {
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.showabout);
         TextView tv = (TextView) this.findViewById(R.id.about_title);
-        tv.setText("安卓背单词-Wordroid 帮助");
+        tv.setText("帮助");
         TextView words = (TextView) this.findViewById(R.id.about_words);
         words.setText(R.string.words);
         TextView abs = (TextView) this.findViewById(R.id.about_abstract);

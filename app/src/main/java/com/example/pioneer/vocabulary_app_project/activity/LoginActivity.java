@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -113,7 +114,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 intent_protocol.setClass(LoginActivity.this, ProtocolActivity.class);
                 startActivity(intent_protocol);
                 finish();
-
+            case R.id.login_ib_phone:
+                Intent intent_phone = new Intent();
+                intent_phone.setClass(LoginActivity.this, PhoneRegisterActivity.class);
+                startActivity(intent_phone);
+                finish();
+                break;
+            case R.id.login_tv_pwd:
+                Intent intent_pwd = new Intent();
+                intent_pwd.setClass(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent_pwd);
+                finish();
                 break;
             default:
                 break;

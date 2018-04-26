@@ -20,10 +20,6 @@ import com.example.pioneer.vocabulary_app_project.database.DataAccess;
 import com.example.pioneer.vocabulary_app_project.model.Word;
 
 import java.util.ArrayList;
-
-/**
- * @author Administrator
- */
 public class EditWordActivity extends Activity implements OnClickListener {
     private String action;
     private EditText spelling;

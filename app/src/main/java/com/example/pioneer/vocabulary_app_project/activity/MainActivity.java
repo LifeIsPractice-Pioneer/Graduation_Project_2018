@@ -30,7 +30,7 @@ public class MainActivity extends FragmentActivity {
         fragments.add(new HomepageFragment());
         fragments.add(new CourseFragment());
         fragments.add(new DiscoverFragment());
-        fragments.add(new MyFragment());
+        //fragments.add(new MyFragment());
         new MyAdapter(this, fragments, R.id.Fragment, rg);
 
     }

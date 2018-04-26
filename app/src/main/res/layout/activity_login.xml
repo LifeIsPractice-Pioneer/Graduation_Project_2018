@@ -10,10 +10,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
         <!--欢迎语-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,12 +27,12 @@
                 android:textSize="25sp" />
 
             <TextView
-                android:clickable="true"
                 android:id="@+id/login_tv_know"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:paddingLeft="100dp"
+                android:clickable="true"
+                android:paddingLeft="80dp"
                 android:text="@string/login_tv_know"
                 android:textColor="@color/colorGreen"
                 android:textSize="15sp" />
@@ -102,10 +99,10 @@
                 android:text="@string/login_tv_may" />
             <!--普通密码登录-->
             <TextView
-                android:clickable="true"
                 android:id="@+id/login_tv_pwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:clickable="true"
                 android:gravity="center"
                 android:text="@string/login_tv_pwd"
                 android:textColor="@color/colorBlack" />
@@ -125,10 +122,10 @@
                 android:textColor="@color/colorBlack" />
             <!--飞词令用户协议-->
             <TextView
-                android:clickable="true"
                 android:id="@+id/login_tv_protocol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:clickable="true"
                 android:text="@string/login_tv_protocol"
                 android:textColor="@color/colorGreen" />
         </LinearLayout>

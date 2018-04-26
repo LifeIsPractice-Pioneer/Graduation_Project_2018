@@ -41,7 +41,7 @@ public class makeNotify extends BroadcastReceiver {
                     }
                 }
                 if (notify) {
-                    NotificationManager notiManager = (NotificationManager) context.getSystemService("notification");
+                    NotificationManager notiManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
                     Notification notification = new Notification(R.drawable.icon, "有单词需要复习~", System.currentTimeMillis());
                     notification.flags = Notification.FLAG_AUTO_CANCEL;
                     Intent intent1 = new Intent(context, MainVoActivity.class);
@@ -57,7 +57,7 @@ public class makeNotify extends BroadcastReceiver {
             }
         }
 
-
+        context.unregisterReceiver(this);
     }
 
 }

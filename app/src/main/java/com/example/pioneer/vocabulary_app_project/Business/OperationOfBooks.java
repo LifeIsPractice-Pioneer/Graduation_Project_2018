@@ -360,7 +360,7 @@ public class OperationOfBooks {
         Log.i("", f.format(calendar.getTime()));
         long starttime = calendar.getTimeInMillis();
         long repeattime = 24 * 60 * 60 * 1000;
-        AlarmManager am = (AlarmManager) context.getSystemService("alarm");
+        AlarmManager am = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(context, makeNotify.class);
         intent.setAction("shownotify");
         PendingIntent sender = PendingIntent.getBroadcast(context, 0, intent, 0);
